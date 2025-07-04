@@ -2,13 +2,13 @@ import "@/app/globals.css";
 
 import React from "react";
 import { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Azeret_Mono } from "next/font/google";
 import { headers } from "next/headers";
 
 
 export const dynamic = "force-dynamic";
 
-const font = Roboto({
+const font = Azeret_Mono({
   subsets: ["latin"],
 });
 
