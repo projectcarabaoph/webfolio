@@ -2,13 +2,13 @@ import "@/app/globals.css";
 
 import React from "react";
 import { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { headers } from "next/headers";
 
 
 export const dynamic = "force-dynamic";
 
-const outfit = Outfit({
+const font = Roboto({
   subsets: ["latin"],
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
 
-    <html lang="en" className={outfit.className} suppressHydrationWarning>
+    <html lang="en" className={font.className} suppressHydrationWarning>
       <body>
         {children}
       </body>
