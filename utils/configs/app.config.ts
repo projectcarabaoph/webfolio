@@ -2,13 +2,13 @@ import { z } from "zod";
 
 
 const {
-    USER_NAME,
-    USER_DESCRIPTION,
-    USER_DESIGNATION,
-    USER_LOCATION,
-    GITHUB_URL,
-    DAILY_URL,
-    EMAIL_TO,
+    NEXT_PUBLIC_USER_NAME,
+    NEXT_PUBLIC_USER_DESCRIPTION,
+    NEXT_PUBLIC_USER_DESIGNATION,
+    NEXT_PUBLIC_USER_LOCATION,
+    NEXT_PUBLIC_GITHUB_URL,
+    NEXT_PUBLIC_DAILY_URL,
+    NEXT_PUBLIC_EMAIL_TO,
 } = process.env
 
 export function appConfig() {
@@ -23,12 +23,12 @@ export function appConfig() {
             email: z.string().min(1),
         })
         .parse({
-            name: USER_NAME,
-            description: USER_DESCRIPTION,
-            designation: USER_DESIGNATION,
-            location: USER_LOCATION,
-            github: GITHUB_URL,
-            daily: DAILY_URL,
-            email: EMAIL_TO,
+            name: NEXT_PUBLIC_USER_NAME,
+            description: NEXT_PUBLIC_USER_DESCRIPTION,
+            designation: NEXT_PUBLIC_USER_DESIGNATION,
+            location: NEXT_PUBLIC_USER_LOCATION,
+            github: NEXT_PUBLIC_GITHUB_URL,
+            daily: NEXT_PUBLIC_DAILY_URL,
+            email: NEXT_PUBLIC_EMAIL_TO,
         });
 }
