@@ -13,14 +13,16 @@ const outfit = Outfit({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
+  const host = (await headers()).get("host")
   return {
     title: "Joseph Encila",
     description: `I'm a Frontend Developer based in the Philippines committed to continuous learning and improving my skills in an educational or professional settings, always 
 thrilled about the opportunity to contribute to a dynamic team and learn from industry experts.
     `,
-    metadataBase: new URL(`https://${headers().get("host")}`),
-  };
+    metadataBase: new URL(`https://${host}`),
+  }
 }
+
 
 export default function RootLayout({
   children,
