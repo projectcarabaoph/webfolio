@@ -5,6 +5,7 @@ import MarketingProfile from "@/app/(marketing)/_components/marketing-profile"
 import MarketingProfileSocials from "@/app/(marketing)/_components/marketing-profile-socials"
 import MarketingProfileAbout from "@/app/(marketing)/_components/marketing-profile-about"
 import MarketingProfileSkills from "@/app/(marketing)/_components/marketing-profile-skills"
+import MarketingProjects from "./_components/marketing-projects"
 
 const MarketingPage = () => {
 
@@ -20,8 +21,8 @@ const MarketingPage = () => {
                     </div>
                 </div>
 
-                <div>
-
+                <div className="md:p-4 ">
+                    <MarketingProjects />
                 </div>
 
             </div>
