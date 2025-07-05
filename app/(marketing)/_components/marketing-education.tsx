@@ -1,3 +1,5 @@
+'use client'
+
 import ListComponent from "@/components/shared/list-component";
 import { Card, CardContent } from "@/components/ui/card";
 import { educationList } from "@/utils/constants";
@@ -9,8 +11,8 @@ export default function MarketingEducation() {
             <span className='text-neutral-200 uppercase'>Education</span>
             <ListComponent
                 as="ul"
-                className="w-full  list-none grid grid-cols-1  gap-4"
-                data={educationList.reverse()}
+                className="w-full  list-none flex flex-col-reverse  gap-4"
+                data={educationList}
                 renderItem={(education: TEducationList) => (
                     <Card key={education.id} className="bg-neutral-950  h-auto border border-[#392e4e] w-full   mx-auto overflow-hidden">
 
