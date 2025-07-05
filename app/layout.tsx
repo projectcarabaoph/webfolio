@@ -15,7 +15,7 @@ const font = Open_Sans({
 export async function generateMetadata(): Promise<Metadata> {
   const host = (await headers()).get("host")
   return {
-    title: "Joseph Encila",
+    title: "Joseph Encila | Portfolio",
     description: `I'm a Frontend Developer based in the Philippines committed to continuous learning and improving my skills in an educational or professional settings, always 
 thrilled about the opportunity to contribute to a dynamic team and learn from industry experts.
     `,
