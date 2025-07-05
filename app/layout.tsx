@@ -2,13 +2,13 @@ import "@/app/globals.css";
 
 import React from "react";
 import { Metadata } from "next";
-import { Azeret_Mono } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { headers } from "next/headers";
 
 
 export const dynamic = "force-dynamic";
 
-const font = Azeret_Mono({
+const font = Open_Sans({
   subsets: ["latin"],
 });
 
