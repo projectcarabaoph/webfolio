@@ -21,7 +21,7 @@ const MarketingPage = () => {
                     </div>
                 </div>
 
-                <div className="md:p-4 ">
+                <div className="md:px-4 ">
                     <MarketingProjects />
                 </div>
 
