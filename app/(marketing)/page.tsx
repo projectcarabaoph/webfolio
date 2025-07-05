@@ -1,15 +1,15 @@
 
 'use client'
 
-import Link from "next/link"
-import { Icon } from '@iconify/react'
+
 import ListComponent from "@/components/shared/list-component"
 import SplitText from "@/components/shared/split-text"
 
-import { socialList, stackList } from "@/utils/constants"
-import { TSocialList, TStackList } from "@/utils/constants/_types"
+import { stackList } from "@/utils/constants"
+import { TStackList } from "@/utils/constants/_types"
 import MarketingProfile from "./_components/marketing-profile"
 import { appConfig } from "@/utils/configs/app.config"
+import MarketingProfileSocials from "./_components/marketing-profile-socials"
 
 const MarketingPage = () => {
 
@@ -23,29 +23,8 @@ const MarketingPage = () => {
                     <div className=' bg-neutral-950 flex flex-col gap-4 border border-[#27272a] rounded-md  p-4 '>
 
                         <MarketingProfile />
+                        <MarketingProfileSocials />
 
-                        <div className='py-2'>
-                            <ListComponent
-                                as="ul"
-                                className=' list-none w-full flex flex-row flex-wrap  items-center gap-4'
-                                data={socialList}
-                                renderItem={(social: TSocialList) => (
-
-                                    <Link key={social.id} title={social.name} href={social.social_url}
-                                        className="bg-[#170d27]  border border-[#392e4e] flex flex-col justify-center items-center p-1 rounded-md gap-2"
-                                    >
-                                        <Icon
-                                            icon={social.icon}
-                                            width="24"
-                                            height="24"
-                                            className=" text-[rgb(177,158,239)] hover:text-neutral-200"
-                                        />
-                                    </Link>
-
-                                )}
-
-                            />
-                        </div>
                         <div className='mt-8 flex flex-col gap-4 '>
                             <span className='text-neutral-200 uppercase'>About</span>
 
