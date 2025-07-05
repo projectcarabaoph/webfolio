@@ -8,12 +8,10 @@ import SplitText from "@/components/shared/split-text"
 import { stackList } from "@/utils/constants"
 import { TStackList } from "@/utils/constants/_types"
 import MarketingProfile from "./_components/marketing-profile"
-import { appConfig } from "@/utils/configs/app.config"
 import MarketingProfileSocials from "./_components/marketing-profile-socials"
+import MarketingProfileAbout from "./_components/marketing-profile-about"
 
 const MarketingPage = () => {
-
-    const { description } = appConfig()
 
     return (
         <div className="bg-neutral-950 p-2 h-full w-full flex flex-col items-center">
@@ -24,24 +22,8 @@ const MarketingPage = () => {
 
                         <MarketingProfile />
                         <MarketingProfileSocials />
+                        <MarketingProfileAbout />
 
-                        <div className='mt-8 flex flex-col gap-4 '>
-                            <span className='text-neutral-200 uppercase'>About</span>
-
-                            <SplitText
-                                text={description}
-                                className="text-neutral-400 text-[14px]   "
-                                delay={5}
-                                duration={0.5}
-                                ease="power3.out"
-                                splitType="words"
-                                from={{ opacity: 0, y: 40 }}
-                                to={{ opacity: 1, y: 0 }}
-                                threshold={0.1}
-                                rootMargin="-100px"
-                                textAlign="left"
-                            />
-                        </div>
 
                         <div className='mt-8  flex flex-col gap-4'>
                             <span className='text-neutral-200 uppercase'>Skills</span>
