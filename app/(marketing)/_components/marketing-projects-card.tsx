@@ -9,7 +9,7 @@ import { IProjectList, TTechnologies } from "@/utils/constants/_types";
 
 export default function MarketingProjectsCard({ project }: { project: IProjectList }) {
     return (
-        <Card className="hover:shadow-lg  hover:shadow-[#170d27] bg-neutral-950 border  p-0 min-h-[384px] h-auto border-[#392e4e] w-full   mx-auto overflow-hidden">
+        <Card className="hover:shadow-lg  hover:shadow-custom-purple-950 bg-neutral-950 border  p-0 min-h-[384px] h-auto border-custom-purple-800 w-full   mx-auto overflow-hidden">
             <div className="relative h-32 bg-red-200 ">
                 <Image src={project.images[0]} alt="Project conclusion dashboard" fill className="top-0 object-cover" />
             </div>
@@ -26,7 +26,7 @@ export default function MarketingProjectsCard({ project }: { project: IProjectLi
                             <SplitText
                                 key={tech.name}
                                 text={tech.name}
-                                className="bg-[#170d27] text-[rgb(177,158,239)]    text-[12px] p-2 rounded-md"
+                                className="bg-custom-purple-950 text-custom-purple-200   text-[12px] p-2 rounded-md"
                                 delay={5}
                                 duration={0.5}
                                 ease="power3.out"

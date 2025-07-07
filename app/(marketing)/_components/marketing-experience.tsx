@@ -12,7 +12,7 @@ export default function MarketingExperience() {
                 className="w-full  list-none grid grid-cols-1  gap-4"
                 data={experienceList}
                 renderItem={(experience: TExperienceList) => (
-                    <Card key={experience.id} className="bg-neutral-950  h-auto border border-[#392e4e] w-full   mx-auto overflow-hidden">
+                    <Card key={experience.id} className="bg-neutral-950  h-auto border border-custom-purple-800 w-full   mx-auto overflow-hidden">
 
                         <CardContent >
                             <div className="flex flex-col gap-2">

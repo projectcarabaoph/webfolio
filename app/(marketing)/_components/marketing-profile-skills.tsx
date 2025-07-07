@@ -15,7 +15,7 @@ export default function MarketingProfileSkills() {
                     <SplitText
                         key={stack.id}
                         text={stack.name}
-                        className="bg-[#170d27] text-[rgb(177,158,239)]    text-[12px] p-2 rounded-md"
+                        className="bg-custom-purple-950 text-custom-purple-200    text-[12px] p-2 rounded-md"
                         delay={5}
                         duration={0.5}
                         ease="power3.out"

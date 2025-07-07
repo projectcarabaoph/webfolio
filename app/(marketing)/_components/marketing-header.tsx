@@ -12,14 +12,14 @@ export default function MarketingHeader() {
                 <ul className="list-none p-0 flex justify-between items-center">
                     <li className="flex flex-row gap-2 justify-between items-center">
                         <Link href="/">
-                            <MainLogo className="w-8 h-8  fill-[rgb(177,158,239)] hover:fill-neutral-200" />
+                            <MainLogo className="w-8 h-8  fill-custom-purple-800  text-custom-purple-200 hover:fill-neutral-200" />
                         </Link>
                     </li>
                     <li className="flex flex-row gap-2 justify-between items-center">
-                        <Button className="bg-[#170d27] uppercase  border border-[#392e4e]  text-[rgb(177,158,239)] hover:text-neutral-200" >
+                        <Button className="bg-custom-purple-950  uppercase  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
                             Resume
                         </Button>
-                        <Button className="bg-[#170d27]  border border-[#392e4e]  text-[rgb(177,158,239)] hover:text-neutral-200" >
+                        <Button className=" bg-custom-purple-950  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
                             <Sun />
                         </Button>
                     </li>

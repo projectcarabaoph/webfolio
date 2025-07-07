@@ -16,13 +16,13 @@ export default function MarketingProfileSocials() {
                 renderItem={(social: TSocialList) => (
 
                     <Link key={social.id} title={social.name} href={social.social_url}
-                        className="bg-[#170d27]  border border-[#392e4e] flex flex-col justify-center items-center p-1 rounded-md gap-2"
+                        className="bg-custom-purple-950  border border-custom-purple-800 flex flex-col justify-center items-center p-1 rounded-md gap-2"
                     >
                         <Icon
                             icon={social.icon}
                             width="24"
                             height="24"
-                            className=" text-[rgb(177,158,239)] hover:text-neutral-200"
+                            className=" text-custom-purple-200 hover:text-neutral-200"
                         />
                     </Link>
 

@@ -14,7 +14,7 @@ export default function MarketingEducation() {
                 className="w-full  list-none flex flex-col-reverse  gap-4"
                 data={educationList}
                 renderItem={(education: TEducationList) => (
-                    <Card key={education.id} className="bg-neutral-950  h-auto border border-[#392e4e] w-full   mx-auto overflow-hidden">
+                    <Card key={education.id} className="bg-neutral-950  h-auto border border-custom-purple-800 w-full   mx-auto overflow-hidden">
 
                         <CardContent >
                             <div className="flex flex-col gap-2">

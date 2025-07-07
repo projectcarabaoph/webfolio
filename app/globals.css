@@ -4,6 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-custom-purple-950: #170d27;
+  --color-custom-purple-800: #392e4e;
+  --color-custom-purple-200: rgb(177, 158, 239);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
