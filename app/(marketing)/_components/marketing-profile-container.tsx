@@ -7,7 +7,7 @@ import MarketingProfileSkills from "@/app/(marketing)/_components/marketing-prof
 
 export default function MarketingProfileContainer() {
     return (
-        <aside className="bg-neutral-950 md:sticky md:top-16 md:h-[calc(100dvh-64px)] py-2">
+        <aside className="bg-neutral-950 md:sticky md:top-16 md:h-[calc(100dvh-64px)] p-2">
             <div className='bg-neutral-950  flex flex-col gap-4 border border-[#27272a] rounded-md  p-4 '>
                 <MarketingProfile />
                 <MarketingProfileSocials />
