@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import { Sun } from "lucide-react"
+// import { Sun } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { MainLogo } from "@/public/assets/svgs"
@@ -19,9 +19,9 @@ export default function MarketingHeader() {
                         <Button className="bg-custom-purple-950  uppercase  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
                             Resume
                         </Button>
-                        <Button className=" bg-custom-purple-950  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
+                        {/* <Button className=" bg-custom-purple-950  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
                             <Sun />
-                        </Button>
+                        </Button> */}
                     </li>
                 </ul>
             </nav>
