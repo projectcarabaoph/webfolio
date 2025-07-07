@@ -23,7 +23,7 @@ const MarketingProjectsDetailsPage = ({ params }: { params: { id: string } }) =>
             ) : (
                 <div className="flex flex-col gap-4 p-2">
                     <Link href="/"
-                        className=" text-custom-purple-200 hover:text-neutral-200 bg-custom-purple-950  border border-custom-purple-800 flex flex-row  w-28 py-1 px-2 rounded-md gap-1 "
+                        className=" text-neutral-200 hover:text-neutral-300 bg-custom-purple-950  border border-custom-purple-800 flex flex-row  w-28 py-1 px-2 rounded-md gap-1 "
                     >
                         <Icon
                             icon="material-symbols:chevron-left"

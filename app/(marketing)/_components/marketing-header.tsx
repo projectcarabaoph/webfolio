@@ -16,7 +16,7 @@ export default function MarketingHeader() {
                         </Link>
                     </li>
                     <li className="flex flex-row gap-2 justify-between items-center">
-                        <Button className="bg-custom-purple-950  uppercase  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
+                        <Button className="bg-custom-purple-950  uppercase  border border-custom-purple-800  text-neutral-200 hover:text-neutral-300" >
                             Resume
                         </Button>
                         {/* <Button className=" bg-custom-purple-950  border border-custom-purple-800  text-custom-purple-200 hover:text-neutral-200" >
