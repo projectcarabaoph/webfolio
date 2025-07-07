@@ -5,10 +5,9 @@ import Link from "next/link";
 
 import ListComponent from "@/components/shared/list-component";
 import MarketingProjectsCard from "@/app/(marketing)/_components/marketing-projects-card";
-import { projectList } from "@/utils/constants";
 import { IProjectList } from "@/utils/constants/_types";
 
-export default function MarketingProjects() {
+export default function MarketingProjects({ projectList }: { projectList: IProjectList[] }) {
     return (
         <div className='flex flex-col gap-4 py-4 md:py-0 '>
             <span className='text-neutral-200 uppercase'>Projects</span>
