@@ -17,7 +17,7 @@ export default function MarketingProjects() {
                 className="w-full  list-none grid grid-cols-1  lg:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] xl:grid-cols-2 gap-4"
                 data={projectList}
                 renderItem={(project: IProjectList) => (
-                    <Link href="/" key={project.id}>
+                    <Link href={`/projects/${project.id}`} key={project.id}>
                         <MarketingProjectsCard project={project} />
                     </Link>
                 )}
