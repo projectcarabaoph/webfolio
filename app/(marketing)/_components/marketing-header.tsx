@@ -12,7 +12,7 @@ export default function MarketingHeader() {
                 <ul className="list-none p-0 flex justify-between items-center">
                     <li className="flex flex-row gap-2 justify-between items-center">
                         <Link href="/">
-                            <MainLogo className="w-8 h-8  fill-custom-purple-800  text-custom-purple-200 hover:fill-neutral-200" />
+                            <MainLogo className="w-8 h-8  fill-custom-purple-200   hover:fill-neutral-200" />
                         </Link>
                     </li>
                     <li className="flex flex-row gap-2 justify-between items-center">
