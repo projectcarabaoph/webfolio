@@ -1,8 +1,9 @@
+
 import { Ratelimit } from '@upstash/ratelimit'
-import { Redis } from '@upstash/redis'
+import { redis } from './redis'
 
 export const rateLimit = new Ratelimit({
-    redis: Redis.fromEnv(),
+    redis: redis,
     limiter: Ratelimit.slidingWindow(10, "10 s"),
     analytics: true,
     timeout: 10000, // 10 ms
